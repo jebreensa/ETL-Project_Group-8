@@ -26,7 +26,7 @@ def Home():
         f"EXAMPLE: <br/>"
         f"----------------<br/>"
         f"----------------<br/>"
-        f" /api/v1.0/2017/James Harden ----><br/>"
+        f" /api/v1.0/nba/2017/James Harden ----><br/>"
         f"----------------<br/>"
         f"  player_id: 201935, <br/>"
         f"   player_name: James Harden, <br/>"
@@ -59,6 +59,7 @@ def Home():
             f"per: 31.4942399,<br/>"
             f"cpi_ave: 245.12,<br/>"
             f"register_value: 10961<br/>"
+            f"player_evaluation: 3.2134847648760063<br/>"
     )
 
 @app.route("/api/v1.0/nba/<year>/<player>")
@@ -98,7 +99,8 @@ def player(player, year):
                         "salary": row[27],
                         "per": row[28],
                         "cpi_ave": row[29],
-                        "register_value": row[30]}
+                        "register_value": row[30],
+                        "player_evaluation": row[31]}
 
     return jsonify(player_dict)
 
