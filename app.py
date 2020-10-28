@@ -19,7 +19,7 @@ def Home():
         f"-------------------<br/>"
         f"How to Use this API:<br/>"
         f"Form a URL for the Player and Year you want to view in this format:<br/>"
-        f"/api/v1.0/api/YEAR/PLAYER NAME<br/>"
+        f"/api/v1.0/api/nba/YEAR/PLAYER NAME<br/>"
         f"----------------<br/>"
         f"----------------<br/>"
         f"----------------<br/>"
