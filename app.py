@@ -60,6 +60,12 @@ def Home():
             f"cpi_ave: 245.12,<br/>"
             f"register_value: 10961<br/>"
             f"player_evaluation: 3.2134847648760063<br/>"
+            f"----------------<br/>"
+            f"----------------<br/>"
+            f"TERMS: <br/>"
+            f"PER: Player efficiency rating, an estimation of a players overall performance <br/>"
+            f"cpi_ave: Consumer price index for the year used in calculations <br/>"
+            f"player_evaluation: Estimation of overpay/underpay, a value higher than zero represents a high salary relative to performance, and a value lower than zero represents a lower salary relative to performance. The further from zero, the more extreme."
     )
 
 @app.route("/api/v1.0/nba/<year>/<player>")
@@ -99,7 +105,6 @@ def player(player, year):
                         "salary": row[27],
                         "per": row[28],
                         "cpi_ave": row[29],
-                        "register_value": row[30],
                         "player_evaluation": row[31]}
 
     return jsonify(player_dict)
