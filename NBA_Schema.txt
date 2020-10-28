@@ -1,0 +1,36 @@
+CREATE TABLE nba_stats_salaries_double (
+	player_id INT,
+	player_name VARCHAR(30), 
+	player_age DOUBLE PRECISION,
+	full_team_name VARCHAR(30),
+	is_active VARCHAR(10),
+	season_id VARCHAR(10),
+	gp INT,
+	gs INT,
+	min DOUBLE PRECISION,
+	fgm INT,
+	fga INT,
+	fg_pct DOUBLE PRECISION,
+	fg3m DOUBLE PRECISION,
+	fg3a DOUBLE PRECISION,
+	fg3_pct DOUBLE PRECISION,
+	ftm INT,
+	fta INT,
+	ft_pct DOUBLE PRECISION,
+	oreb DOUBLE PRECISION,
+	dreb DOUBLE PRECISION,
+	reb DOUBLE PRECISION,
+	ast INT,
+	stl DOUBLE PRECISION,
+	blk DOUBLE PRECISION,
+	tov DOUBLE PRECISION,
+	pf INT,
+	pts INT,
+	salary DOUBLE PRECISION,
+	per DOUBLE PRECISION,
+	cpi_ave DOUBLE PRECISION,
+	register_value INT);
+	
+DROP TABLE nba_stats_salaries;
+
+SELECT * FROM nba_stats_salaries_double LIMIT 10;
